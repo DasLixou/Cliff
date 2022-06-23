@@ -5,17 +5,22 @@
         xmlns:cliff="using:Cliff.Design.Components"
         mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="720"
         Width="1280" Height="720"
+        MinWidth="700" MinHeight="350"
         x:Class="Cliff.Design.MainWindow"
         ExtendClientAreaToDecorationsHint="True"
-        ExtendClientAreaTitleBarHeightHint="20"
+        ExtendClientAreaTitleBarHeightHint="30"
         ExtendClientAreaChromeHints="NoChrome"
         SystemDecorations="BorderOnly"
         WindowStartupLocation="CenterScreen"
+        BorderBrush="#292524"
         WindowState="Normal"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="#cf00070b"
         Title="Cliff | v0.0.0 InDev">
-  <Grid RowDefinitions="20,*">
-    <Label Grid.Row="0">Welcome to Cliff!</Label>
+  <Grid RowDefinitions="30,*">
+    <cliff:TitleBar Grid.Row="0" />
     <StackPanel Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+      <cliff:TrackController Label="Drums" BarColor="#0a0c09" Icon="avares://Cliff.Design/Assets/drum.png" />
       <cliff:TrackController Label="Drums" BarColor="#F35A5A" Icon="avares://Cliff.Design/Assets/drum.png" />
       <cliff:TrackController Label="Percussion" BarColor="#F1AB3F" Icon="avares://Cliff.Design/Assets/drum.png" />
     </StackPanel>

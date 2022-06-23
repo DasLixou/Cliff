@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignHeight="30"
+             Height="30"
+             x:Class="Cliff.Design.Components.TitleBar">
+  <Grid>
+    <Rectangle Fill="#292524" IsHitTestVisible="False"></Rectangle>
+    <Label IsHitTestVisible="False" VerticalAlignment="Center" Foreground="#FAFAFA" FontFamily="avares://Cliff.Design/Assets#Rubik" FontSize="14" HorizontalAlignment="Center" Content="{Binding $parent[Window].Title}" />
+    <Button Background="#EF4444" CornerRadius="0" HorizontalAlignment="Right" Click="CloseInteraction">
+      ✕
+    </Button>
+  </Grid>
+
+  <UserControl.Styles>
+    <Style Selector="Button:pointerover /template/ ContentPresenter">
+      <Setter Property="Background" Value="AliceBlue" />
+    </Style>
+  </UserControl.Styles>
+</UserControl>
