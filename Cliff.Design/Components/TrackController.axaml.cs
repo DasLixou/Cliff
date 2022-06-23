@@ -1,19 +1,32 @@
 using Avalonia;
-using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
+using Avalonia.Controls.Primitives;
+using Avalonia.Media;
 
 namespace Cliff.Design.Components
 {
-    public partial class TrackController : UserControl
+    public class TrackController : TemplatedControl
     {
-        public TrackController()
+        public static readonly StyledProperty<IBrush> BarColorProperty = AvaloniaProperty.Register<TrackController, IBrush>(nameof(BarColor));
+        public static readonly StyledProperty<string> LabelProperty = AvaloniaProperty.Register<TrackController, string>(nameof(Label));
+        public static readonly StyledProperty<IImage> IconProperty = AvaloniaProperty.Register<TrackController, IImage>(nameof(Icon));
+
+        public IBrush BarColor
         {
-            InitializeComponent();
+            get { return GetValue(BarColorProperty); }
+            set { SetValue(BarColorProperty, value); }
         }
 
-        private void InitializeComponent()
+        public string Label
         {
-            AvaloniaXamlLoader.Load(this);
+            get { return GetValue(LabelProperty); }
+            set { SetValue(LabelProperty, value); }
         }
+
+        public IImage Icon
+        {
+            get { return GetValue(IconProperty); }
+            set { SetValue(IconProperty, value); }
+        }
+
     }
 }

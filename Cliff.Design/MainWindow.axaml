@@ -12,9 +12,9 @@
         Title="Cliff | v0.0.0 InDev">
   <Grid RowDefinitions="20,*">
     <Label Grid.Row="0">Welcome to Cliff!</Label>
-    <StackPanel Grid.Row="1">
-      <cliff:TrackController HorizontalAlignment="Left" VerticalAlignment="Top" />
-      <cliff:TrackController HorizontalAlignment="Left" VerticalAlignment="Top" />
+    <StackPanel Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+      <cliff:TrackController Label="Drums" BarColor="#F35A5A" Icon="avares://Cliff.Design/Assets/drum.png" />
+      <cliff:TrackController Label="Percussion" BarColor="#F1AB3F" Icon="avares://Cliff.Design/Assets/drum.png" />
     </StackPanel>
   </Grid>
 </Window>
