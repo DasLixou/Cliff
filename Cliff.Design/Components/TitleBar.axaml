@@ -8,7 +8,7 @@
   <Grid>
     <Rectangle Fill="#292524" IsHitTestVisible="False" />
     <Label IsHitTestVisible="False" VerticalAlignment="Center" Foreground="#FAFAFA" FontFamily="avares://Cliff.Design/Assets#Rubik" FontSize="14" HorizontalAlignment="Center" Content="{Binding $parent[Window].Title}" />
-    <Button Background="#EF4444" CornerRadius="0" HorizontalAlignment="Right" Click="CloseInteraction">
+    <Button BorderThickness="0" Background="#EF4444" CornerRadius="0" HorizontalAlignment="Right" Click="CloseInteraction" Width="50" HorizontalContentAlignment="Center">
       ✕
     </Button>
   </Grid>

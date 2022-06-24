@@ -3,7 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:cliff="using:Cliff.Design.Components"
-             mc:Ignorable="d" d:DesignWidth="300"
+             mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="400"
              Width="300"
              x:Class="Cliff.Design.Components.TrackControllerList">
   <Grid>
@@ -15,11 +15,19 @@
     </StackPanel>
     <Grid Height="50" VerticalAlignment="Bottom">
       <Border Margin="4" BorderBrush="#FAFAFA" CornerRadius="11" BorderThickness="1" BorderDashOffset="5" BorderDashArray="5,4.5" >
-        <StackPanel Spacing="5" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-          <Path Fill="#FAFAFA" Data="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" />
-          <TextBlock FontFamily="avares://Cliff.Design/Assets#Rubik" Foreground="#FAFAFA" FontSize="16">Add Track</TextBlock>
-        </StackPanel>
+        <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+          <StackPanel Spacing="5" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Path Fill="#FAFAFA" Data="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" />
+            <TextBlock FontFamily="avares://Cliff.Design/Assets#Rubik" Foreground="#FAFAFA" FontSize="16">Add Track</TextBlock>
+          </StackPanel>
+        </Button>
       </Border>
     </Grid>
   </Grid>
+
+  <UserControl.Styles>
+    <Style Selector="Button">
+      <Setter Property="Background" Value="Transparent" />
+    </Style>
+  </UserControl.Styles>
 </UserControl>
