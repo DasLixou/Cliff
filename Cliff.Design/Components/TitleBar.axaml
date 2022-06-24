@@ -6,7 +6,7 @@
              Height="30"
              x:Class="Cliff.Design.Components.TitleBar">
   <Grid>
-    <Rectangle Fill="#292524" IsHitTestVisible="False"></Rectangle>
+    <Rectangle Fill="#292524" IsHitTestVisible="False" />
     <Label IsHitTestVisible="False" VerticalAlignment="Center" Foreground="#FAFAFA" FontFamily="avares://Cliff.Design/Assets#Rubik" FontSize="14" HorizontalAlignment="Center" Content="{Binding $parent[Window].Title}" />
     <Button Background="#EF4444" CornerRadius="0" HorizontalAlignment="Right" Click="CloseInteraction">
       ✕

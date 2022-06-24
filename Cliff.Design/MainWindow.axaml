@@ -12,17 +12,10 @@
         ExtendClientAreaChromeHints="NoChrome"
         SystemDecorations="BorderOnly"
         WindowStartupLocation="CenterScreen"
-        BorderBrush="#292524"
         WindowState="Normal"
-        TransparencyLevelHint="AcrylicBlur"
-        Background="#cf00070b"
         Title="Cliff | v0.0.0 InDev">
   <Grid RowDefinitions="30,*">
     <cliff:TitleBar Grid.Row="0" />
-    <StackPanel Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top">
-      <cliff:TrackController Label="Drums" BarColor="#0a0c09" Icon="avares://Cliff.Design/Assets/drum.png" />
-      <cliff:TrackController Label="Drums" BarColor="#F35A5A" Icon="avares://Cliff.Design/Assets/drum.png" />
-      <cliff:TrackController Label="Percussion" BarColor="#F1AB3F" Icon="avares://Cliff.Design/Assets/drum.png" />
-    </StackPanel>
+    <cliff:TrackControllerList Grid.Row="1" HorizontalAlignment="Left" />
   </Grid>
 </Window>
