@@ -6,9 +6,9 @@
              Height="30"
              x:Class="Cliff.Design.Components.TitleBar">
   <Grid>
-    <Rectangle Fill="#292524" IsHitTestVisible="False" />
-    <Label IsHitTestVisible="False" VerticalAlignment="Center" Foreground="#FAFAFA" FontFamily="avares://Cliff.Design/Assets#Rubik" FontSize="14" HorizontalAlignment="Center" Content="{Binding $parent[Window].Title}" />
-    <Button BorderThickness="0" Background="#EF4444" CornerRadius="0" HorizontalAlignment="Right" Click="CloseInteraction" Width="50" HorizontalContentAlignment="Center">
+    <Rectangle Fill="{DynamicResource Stone/800}" IsHitTestVisible="False" />
+    <Label IsHitTestVisible="False" VerticalAlignment="Center" Foreground="{DynamicResource Zinc/50}" FontFamily="{DynamicResource Rubik}" FontSize="14" HorizontalAlignment="Center" Content="{Binding $parent[Window].Title}" />
+    <Button BorderThickness="0" Background="{DynamicResource Red/500}" CornerRadius="0" HorizontalAlignment="Right" Click="CloseInteraction" Width="50" HorizontalContentAlignment="Center">
       ✕
     </Button>
   </Grid>

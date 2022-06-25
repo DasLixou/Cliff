@@ -1,0 +1,6 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Brush x:Key="Zinc/50">#FAFAFA</Brush>
+  <Brush x:Key="Stone/800">#292524</Brush>
+  <Brush x:Key="Red/500">#EF4444</Brush>
+</ResourceDictionary>

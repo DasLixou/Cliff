@@ -11,12 +11,10 @@
     <None Remove=".gitignore" />
     <None Remove="Assets\drum.png" />
     <None Remove="Assets\Rubik-Regular.ttf" />
-    <None Remove="Assets\VarelaRound-Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <AvaloniaResource Include="Assets\drum.png" />
     <AvaloniaResource Include="Assets\Rubik-Regular.ttf" />
-    <AvaloniaResource Include="Assets\VarelaRound-Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <!--This helps with theme dll-s trimming.

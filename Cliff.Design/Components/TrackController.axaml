@@ -13,18 +13,18 @@
             <Rectangle Width="12" Fill="{TemplateBinding BarColor}" />
             <Image Source="{TemplateBinding Icon}" Width="35" Margin="8 5 20 5" />
             <Grid RowDefinitions="*,*" Margin="0 2">
-              <TextBlock Grid.Row="0" FontFamily="avares://Cliff.Design/Assets#Rubik" Foreground="#FAFAFA" FontSize="16" VerticalAlignment="Center" Text="{TemplateBinding Label}" />
+              <TextBlock Grid.Row="0" FontFamily="{DynamicResource Rubik}" Foreground="{DynamicResource Zinc/50}" FontSize="16" VerticalAlignment="Center" Text="{TemplateBinding Label}" />
               <Grid Grid.Row="1" ColumnDefinitions="*,*">
-                <Border Grid.Column="0" Width="51" Height="17" Background="#FAFAFA" CornerRadius="4">
+                <Border Grid.Column="0" Width="51" Height="17" Background="{DynamicResource Zinc/50}" CornerRadius="4">
                   <Grid ColumnDefinitions="*,2,*">
                     <Rectangle Grid.Column="1" Fill="#78716C" />
                     <Viewbox Grid.Column="2" Width="11" Height="11">
-                      <Path Fill="#292524" Stretch="Uniform" Data="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" />
+                      <Path Fill="{DynamicResource Stone/800}" Stretch="Uniform" Data="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" />
                     </Viewbox>
                   </Grid>
                 </Border>
-                <Border Grid.Column="1" Width="25" Height="17" Margin="5 0 0 0" Background="#FAFAFA" CornerRadius="4">
-                  <Ellipse Width="9" Height="9" Fill="#EF4444" />
+                <Border Grid.Column="1" Width="25" Height="17" Margin="5 0 0 0" Background="{DynamicResource Zinc/50}" CornerRadius="4">
+                  <Ellipse Width="9" Height="9" Fill="{DynamicResource Red/500}" />
                 </Border>
               </Grid>
             </Grid>
