@@ -2,13 +2,16 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace Cliff.Design.Components
+namespace Cliff.Design.Windows
 {
-    public partial class AddTrackButton : UserControl
+    public partial class TrackEditWindow : Window
     {
-        public AddTrackButton()
+        public TrackEditWindow()
         {
             InitializeComponent();
+#if DEBUG
+            this.AttachDevTools();
+#endif
         }
 
         private void InitializeComponent()

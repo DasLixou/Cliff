@@ -1,16 +1,17 @@
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using Cliff.Design.ViewModels;
 
-namespace Cliff.Design.Components
+namespace Cliff.Design.Windows
 {
-    public partial class TrackControllerList : UserControl
+    public partial class MainWindow : Window
     {
-        public TrackControllerList()
+        public MainWindow()
         {
             InitializeComponent();
-            DataContext = new TrackControllerListViewModel();
+#if DEBUG
+            this.AttachDevTools();
+#endif
         }
 
         private void InitializeComponent()

@@ -3,19 +3,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:cliff="using:Cliff.Design.Components"
-        mc:Ignorable="d" d:DesignWidth="1280" d:DesignHeight="720"
-        Width="1280" Height="720"
-        MinWidth="700" MinHeight="350"
-        x:Class="Cliff.Design.MainWindow"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Cliff.Design.Windows.TrackEditWindow"
         ExtendClientAreaToDecorationsHint="True"
         ExtendClientAreaTitleBarHeightHint="30"
         ExtendClientAreaChromeHints="NoChrome"
         SystemDecorations="BorderOnly"
         WindowStartupLocation="CenterScreen"
         WindowState="Normal"
-        Title="Cliff | v0.0.0 InDev">
-  <Grid RowDefinitions="30,*">
+        Title="TrackEditWindow">
+  <Grid RowDefinitions="30">
     <cliff:TitleBar Grid.Row="0" />
-    <cliff:TrackControllerList Grid.Row="1" HorizontalAlignment="Left" />
   </Grid>
 </Window>
