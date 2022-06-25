@@ -1,4 +1,6 @@
-﻿using Cliff.Design.Windows;
+﻿using Avalonia.Media;
+using Cliff.Design.ViewModels;
+using Cliff.Design.Windows;
 using System;
 using System.Windows.Input;
 
@@ -10,6 +12,12 @@ namespace Cliff.Design.Commands
 
         public bool CanExecute(object? parameter) => true;
 
-        public void Execute(object? parameter) => new TrackEditWindow().Show();
+        public void Execute(object? parameter)
+        {
+            var window = new TrackEditWindow();
+            window.ViewModel().BarColor = Brushes.Black;
+            window.ViewModel().Label = "New Track";
+            window.Show();
+        }
     }
 }

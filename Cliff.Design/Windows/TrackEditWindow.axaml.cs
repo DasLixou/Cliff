@@ -1,6 +1,8 @@
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using Cliff.Design.ViewModels;
+using System.Runtime.CompilerServices;
 
 namespace Cliff.Design.Windows
 {
@@ -9,6 +11,7 @@ namespace Cliff.Design.Windows
         public TrackEditWindow()
         {
             InitializeComponent();
+            DataContext = new TrackEditViewModel();
 #if DEBUG
             this.AttachDevTools();
 #endif
@@ -18,5 +21,8 @@ namespace Cliff.Design.Windows
         {
             AvaloniaXamlLoader.Load(this);
         }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        internal TrackEditViewModel ViewModel() => (TrackEditViewModel)DataContext;
     }
 }
