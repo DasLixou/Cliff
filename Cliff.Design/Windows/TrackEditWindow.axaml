@@ -20,9 +20,35 @@
         <Rectangle Width="12" Fill="{Binding BarColor}" />
         <Image Source="avares://Cliff.Design/Assets/drum.png" Width="35" Margin="14 5 14 5" />
         <Grid Margin="0 2">
-          <TextBlock Grid.Row="0" FontFamily="{DynamicResource Rubik}" Foreground="{DynamicResource Zinc/50}" FontSize="16" VerticalAlignment="Center" Text="{Binding Label}" />
+          <TextBox Padding="0" Grid.Row="0" FontFamily="{DynamicResource Rubik}" Foreground="{DynamicResource Zinc/50}" FontSize="16" VerticalAlignment="Center" Text="{Binding Label, Mode=TwoWay}" VerticalContentAlignment="Center" />
         </Grid>
       </StackPanel>
     </Grid>
   </Grid>
+  
+  <Window.Styles>
+    <Style Selector="TextBox">
+      <Setter Property="Template">
+        <ControlTemplate>
+          <Border Padding="3 2" CornerRadius="4" Background="{DynamicResource Stone/600}">
+            <TextPresenter Name="PART_TextPresenter"
+              Text="{TemplateBinding Text, Mode=TwoWay}"
+              CaretIndex="{TemplateBinding CaretIndex}"
+              SelectionStart="{TemplateBinding SelectionStart}"
+              SelectionEnd="{TemplateBinding SelectionEnd}"
+              TextAlignment="{TemplateBinding TextAlignment}"
+              TextWrapping="{TemplateBinding TextWrapping}"
+              PasswordChar="{TemplateBinding PasswordChar}"
+              RevealPassword="{TemplateBinding RevealPassword}"
+              SelectionBrush="{TemplateBinding SelectionBrush}"
+              SelectionForegroundBrush="{TemplateBinding SelectionForegroundBrush}"
+              CaretBrush="{TemplateBinding CaretBrush}"
+              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+          </Border>
+        </ControlTemplate>
+      </Setter>
+    </Style>
+  </Window.Styles>
+  
 </Window>
