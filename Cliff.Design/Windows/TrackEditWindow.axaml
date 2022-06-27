@@ -20,7 +20,7 @@
         <Rectangle Width="12" Fill="{Binding BarColor}" />
         <Image Source="avares://Cliff.Design/Assets/drum.png" Width="35" Margin="14 5 14 5" />
         <Grid Margin="0 2">
-          <TextBox Padding="0" Grid.Row="0" FontFamily="{DynamicResource Rubik}" Foreground="{DynamicResource Zinc/50}" FontSize="16" VerticalAlignment="Center" Text="{Binding Label, Mode=TwoWay}" VerticalContentAlignment="Center" />
+          <TextBox SelectionBrush="{DynamicResource Blue/500}" Padding="0" Grid.Row="0" FontFamily="{DynamicResource Rubik}" Foreground="{DynamicResource Zinc/50}" FontSize="16" VerticalAlignment="Center" Text="{Binding Label, Mode=TwoWay}" VerticalContentAlignment="Center" />
         </Grid>
       </StackPanel>
     </Grid>

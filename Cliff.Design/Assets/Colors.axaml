@@ -5,4 +5,5 @@
   <Brush x:Key="Stone/700">#44403C</Brush>
   <Brush x:Key="Stone/800">#292524</Brush>
   <Brush x:Key="Red/500">#EF4444</Brush>
+  <Brush x:Key="Blue/500">#3B82F6</Brush>
 </ResourceDictionary>
