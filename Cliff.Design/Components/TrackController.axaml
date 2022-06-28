@@ -10,12 +10,12 @@
     <Setter Property="Template">
       <ControlTemplate>
         <Grid Width="300" Height="50">
-          <StackPanel Orientation="Horizontal">
+          <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
             <Rectangle Width="12" Fill="{TemplateBinding BarColor}" />
             <Image Source="{TemplateBinding Icon}" Width="35" Margin="14 5 14 5" />
             <Grid RowDefinitions="*,*" Margin="0 2">
               <TextBlock Grid.Row="0" FontFamily="{DynamicResource Rubik}" Foreground="{DynamicResource Zinc/50}" FontSize="16" VerticalAlignment="Center" Text="{TemplateBinding Label}" />
-              <Grid Grid.Row="1" ColumnDefinitions="*,*">
+              <Grid Grid.Row="1" ColumnDefinitions="*,*" HorizontalAlignment="Left">
                 <Border Grid.Column="0" Width="51" Height="17" Background="{DynamicResource Zinc/50}" CornerRadius="4">
                   <Grid ColumnDefinitions="*,2,*">
                     <Rectangle Grid.Column="1" Fill="#78716C" />
