@@ -17,6 +17,7 @@ namespace Cliff.Design.Commands
             var window = new TrackEditWindow();
             window.ViewModel().BarColor = Brushes.Black;
             window.ViewModel().Label = "New Track";
+            window.ViewModel().Controller = null;
 
             var lifetime = (IClassicDesktopStyleApplicationLifetime)App.Current.ApplicationLifetime;
 

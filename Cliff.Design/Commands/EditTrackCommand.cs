@@ -1,6 +1,4 @@
-﻿using Avalonia;
-using Avalonia.Controls.ApplicationLifetimes;
-using Avalonia.Media;
+﻿using Avalonia.Controls.ApplicationLifetimes;
 using Cliff.Design.Components;
 using Cliff.Design.Windows;
 using System;
@@ -26,6 +24,7 @@ namespace Cliff.Design.Commands
             var window = new TrackEditWindow();
             window.ViewModel().BarColor = _controller.BarColor;
             window.ViewModel().Label = _controller.Label;
+            window.ViewModel().Controller = _controller;
 
             var lifetime = (IClassicDesktopStyleApplicationLifetime)App.Current.ApplicationLifetime;
 

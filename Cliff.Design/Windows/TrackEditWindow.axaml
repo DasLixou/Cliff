@@ -15,14 +15,21 @@
         WindowState="Normal"
         Title="TrackEditWindow">
   <Grid>
-    <Grid Width="300" Height="50" Margin="18" HorizontalAlignment="Left" VerticalAlignment="Top">
-      <StackPanel Orientation="Horizontal">
-        <Rectangle Width="12" Fill="{Binding BarColor}" />
-        <Image Source="avares://Cliff.Design/Assets/drum.png" Width="35" Margin="14 5 14 5" />
-        <Grid Margin="0 2">
-          <TextBox SelectionBrush="{DynamicResource Blue/500}" Padding="0" Grid.Row="0" FontFamily="{DynamicResource Rubik}" Foreground="{DynamicResource Zinc/50}" FontSize="16" VerticalAlignment="Center" Text="{Binding Label, Mode=TwoWay}" VerticalContentAlignment="Center" />
-        </Grid>
-      </StackPanel>
+    <Grid  VerticalAlignment="Top">
+      <Grid Width="300" Height="50" Margin="18" HorizontalAlignment="Left">
+        <StackPanel Orientation="Horizontal">
+          <Rectangle Width="12" Fill="{Binding BarColor}" />
+          <Image Source="avares://Cliff.Design/Assets/drum.png" Width="35" Margin="14 5 14 5" />
+          <Grid Margin="0 2">
+            <TextBox SelectionBrush="{DynamicResource Blue/500}" Padding="0" Grid.Row="0" FontFamily="{DynamicResource Rubik}" Foreground="{DynamicResource Zinc/50}" FontSize="16" VerticalAlignment="Center" Text="{Binding Label, Mode=TwoWay}" VerticalContentAlignment="Center" />
+          </Grid>
+        </StackPanel>
+      </Grid>
+      <Button Padding="0" Margin="0 20 18 10" HorizontalAlignment="Right" VerticalAlignment="Top" Command="{Binding AcceptCommand}">
+        <Border Background="{DynamicResource Zinc/50}" Width="25" Height="20" CornerRadius="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+          <Path HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 2 3" Fill="{DynamicResource Meadow/500}" Data="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+        </Border>
+      </Button>
     </Grid>
   </Grid>
   
