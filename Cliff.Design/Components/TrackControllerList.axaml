@@ -8,11 +8,9 @@
              x:Class="Cliff.Design.Components.TrackControllerList">
   <Grid>
     <Rectangle Fill="{DynamicResource Stone/800}" Width="300" />
-    <StackPanel Orientation="Vertical" VerticalAlignment="Top">
-      <cliff:TrackController Label="Drums" BarColor="#0a0c09" Icon="avares://Cliff.Design/Assets/drum.png" />
-      <cliff:TrackController Label="Drums" BarColor="#F35A5A" Icon="avares://Cliff.Design/Assets/drum.png" />
-      <cliff:TrackController Label="Percussion" BarColor="#F1AB3F" Icon="avares://Cliff.Design/Assets/drum.png" />
-    </StackPanel>
+    <ItemsPresenter VerticalAlignment="Top" Items="{Binding TrackController}">
+      
+    </ItemsPresenter>
     <Grid Height="50" VerticalAlignment="Bottom">
       <Border Margin="4" BorderBrush="{DynamicResource Zinc/50}" CornerRadius="11" BorderThickness="1" BorderDashOffset="5" BorderDashArray="5,4.5" >
         <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Command="{Binding AddTrackCommand}">
