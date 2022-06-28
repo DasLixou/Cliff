@@ -29,6 +29,7 @@ namespace Cliff.Design.Commands
                 viewModel.Controller.BarColor = viewModel.BarColor;
                 viewModel.Controller.Label = viewModel.Label;
             }
+            viewModel.RequestClose();
         }
     }
 }

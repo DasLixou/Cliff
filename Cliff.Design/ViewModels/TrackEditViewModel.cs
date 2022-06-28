@@ -1,13 +1,14 @@
 ﻿using Avalonia.Media;
 using Cliff.Design.Commands;
 using Cliff.Design.Components;
+using System;
 using System.Windows.Input;
 
 namespace Cliff.Design.ViewModels
 {
-    internal class TrackEditViewModel : BaseViewModel
+    internal class TrackEditViewModel : ClosableViewModel
     {
-        private ICommand AcceptCommand { get; set; }
+        public ICommand AcceptCommand { get; set; }
 
         public TrackEditViewModel()
         {

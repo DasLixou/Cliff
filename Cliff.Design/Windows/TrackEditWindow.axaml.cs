@@ -12,6 +12,7 @@ namespace Cliff.Design.Windows
         {
             InitializeComponent();
             DataContext = new TrackEditViewModel();
+            ViewModel().OnRequestClose += () => Close();
 #if DEBUG
             this.AttachDevTools();
 #endif
