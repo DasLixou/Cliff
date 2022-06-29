@@ -1,12 +1,20 @@
 ﻿using Avalonia.Media;
 using Cliff.Design.Commands;
 using Cliff.Design.Components;
+using System.Runtime.CompilerServices;
 using System.Windows.Input;
 
 namespace Cliff.Design.ViewModels
 {
+    public delegate void TrackControllerHandler(TrackController controller);
+
     internal class TrackEditViewModel : ClosableViewModel
     {
+        public static event TrackControllerHandler AddNewTrack;
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void AddTrack(TrackController controller) => AddNewTrack?.Invoke(controller);
+
         public ICommand AcceptCommand { get; set; }
         public ICommand DeclineCommand { get; set; }
 

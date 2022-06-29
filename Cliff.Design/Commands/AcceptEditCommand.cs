@@ -23,7 +23,7 @@ namespace Cliff.Design.Commands
         {
             if (viewModel.Controller == null)
             {
-                
+                TrackEditViewModel.AddTrack(new TrackController { BarColor = viewModel.BarColor, Label = viewModel.Label });
             } else
             {
                 viewModel.Controller.BarColor = viewModel.BarColor;
