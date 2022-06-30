@@ -3,7 +3,9 @@
         xmlns:cliff="using:Cliff.Design.Components"
         xmlns:controls="using:Cliff.Design.Components">
   <Design.PreviewWith>
-    <controls:TrackController />
+    <Border Background="{DynamicResource Stone/800}" Width="300">
+      <controls:TrackController Label="Track" BarColor="#abcdef" Icon="avares://Cliff.Design/Assets/drum.png" />
+    </Border>
   </Design.PreviewWith>
 
   <Style Selector="controls|TrackController">
