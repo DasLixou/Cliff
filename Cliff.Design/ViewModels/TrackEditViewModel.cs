@@ -21,7 +21,7 @@ namespace Cliff.Design.ViewModels
         public TrackEditViewModel()
         {
             AcceptCommand = new AcceptEditCommand(this);
-            DeclineCommand = new DeclineEditCommand(this);
+            DeclineCommand = new ClosingCommand(this);
         }
 
         private TrackController? controller;

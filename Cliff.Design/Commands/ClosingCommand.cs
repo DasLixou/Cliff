@@ -4,11 +4,11 @@ using System.Windows.Input;
 
 namespace Cliff.Design.Commands
 {
-    internal class DeclineEditCommand : ICommand
+    internal class ClosingCommand : ICommand
     {
-        private TrackEditViewModel viewModel;
+        private ClosableViewModel viewModel;
 
-        public DeclineEditCommand(TrackEditViewModel viewModel)
+        public ClosingCommand(ClosableViewModel viewModel)
         {
             this.viewModel = viewModel;
         }
