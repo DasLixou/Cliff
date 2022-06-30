@@ -16,6 +16,9 @@
         Title="Cliff | v0.0.0 InDev">
   <Grid RowDefinitions="30,*">
     <cliff:TitleBar Grid.Row="0" />
-    <cliff:TrackControllerList Grid.Row="1" HorizontalAlignment="Left" />
+    <Grid ColumnDefinitions="300,*" Grid.Row="1">
+      <cliff:TrackControllerList Grid.Column="0" />
+      <cliff:TrackTimeline Grid.Column="1" />
+    </Grid>
   </Grid>
 </Window>

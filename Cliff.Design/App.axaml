@@ -5,6 +5,7 @@
   <Application.Styles>
     <theme:DefaultTheme />
     <StyleInclude Source="/Components/TrackController.axaml" />
+    <StyleInclude Source="/Components/TrackTimeline.axaml" />
   </Application.Styles>
 
   <Application.Resources>
