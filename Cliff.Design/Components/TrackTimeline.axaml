@@ -8,9 +8,16 @@
   <Style Selector="controls|TrackTimeline">
     <Setter Property="Template">
       <ControlTemplate>
-        <Grid Height="50" VerticalAlignment="Top">
-          <Rectangle Fill="{DynamicResource Zinc/700}" />
-        </Grid>
+        <Border Background="{DynamicResource Zinc/700}">
+          <StackPanel Orientation="Horizontal" Spacing="80" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="80 0 0 0">
+            <Rectangle Width="1" Fill="{DynamicResource Gray/600}" />
+            <Rectangle Width="1" Fill="{DynamicResource Gray/600}" />
+            <Rectangle Width="1" Fill="{DynamicResource Gray/600}" />
+            <Rectangle Width="1" Fill="{DynamicResource Gray/600}" />
+            <Rectangle Width="1" Fill="{DynamicResource Gray/600}" />
+            <Rectangle Width="1" Fill="{DynamicResource Gray/600}" />
+          </StackPanel>  
+        </Border>
       </ControlTemplate>
     </Setter>
   </Style>

@@ -5,6 +5,7 @@
   <Brush x:Key="Stone/600">#57534E</Brush>
   <Brush x:Key="Stone/700">#44403C</Brush>
   <Brush x:Key="Stone/800">#292524</Brush>
+  <Brush x:Key="Gray/600">#D9D9D9</Brush>
   <Brush x:Key="Red/500">#EF4444</Brush>
   <Brush x:Key="Blue/500">#3B82F6</Brush>
   <Brush x:Key="Meadow/500">#79DD60</Brush>
