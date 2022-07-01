@@ -13,12 +13,14 @@
         SystemDecorations="BorderOnly"
         WindowStartupLocation="CenterScreen"
         WindowState="Normal"
+        Background="{DynamicResource Stone/700}"
         Title="Cliff | v0.0.0 InDev">
-  <Grid RowDefinitions="30,*">
+  <Grid RowDefinitions="30,*,50">
     <cliff:TitleBar Grid.Row="0" />
     <Grid ColumnDefinitions="300,*" Grid.Row="1">
       <cliff:TrackControllerList Grid.Column="0" />
       <cliff:TrackTimeline Grid.Column="1" />
     </Grid>
+    <cliff:FootBar Grid.Row="2" />
   </Grid>
 </Window>
