@@ -1,0 +1,27 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:Cliff.Design.Components">
+  <Design.PreviewWith>
+    <controls:LibraryEntry Label="My cool sound" Width="350" />
+  </Design.PreviewWith>
+
+  <Style Selector="controls|LibraryEntry">
+    <Setter Property="Background" Value="{DynamicResource Stone/800}" />
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Border Background="{TemplateBinding Background}">
+          <Grid Height="20">
+            <TextBlock Margin="10 0 0 0" FontFamily="{DynamicResource Rubik}" Foreground="{DynamicResource Zinc/50}" FontSize="13" VerticalAlignment="Center" Text="{TemplateBinding Label}" />
+          </Grid>
+        </Border>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+
+  <Style Selector="controls|LibraryEntry:pointerover">
+    <Setter Property="Background" Value="{DynamicResource Stone/700}" />
+  </Style>
+  <Style Selector="controls|LibraryEntry:focus">
+    <Setter Property="Background" Value="{DynamicResource Blue/500}" />
+  </Style>
+</Styles>

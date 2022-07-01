@@ -8,9 +8,7 @@
              x:Class="Cliff.Design.Components.TrackControllerList">
   <Grid>
     <Rectangle Fill="{DynamicResource Stone/800}" Width="300" />
-    <ItemsPresenter VerticalAlignment="Top" Items="{Binding TrackController}">
-      
-    </ItemsPresenter>
+    <ItemsPresenter VerticalAlignment="Top" Items="{Binding TrackController}" />
     <Grid Height="50" VerticalAlignment="Bottom">
       <Border Margin="4" BorderBrush="{DynamicResource Zinc/50}" CornerRadius="11" BorderThickness="1" BorderDashOffset="5" BorderDashArray="5,4.5" >
         <Button HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Command="{Binding AddTrackCommand}">

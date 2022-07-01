@@ -6,6 +6,7 @@
     <theme:DefaultTheme />
     <StyleInclude Source="/Components/TrackController.axaml" />
     <StyleInclude Source="/Components/TrackTimeline.axaml" />
+    <StyleInclude Source="/Components/LibraryEntry.axaml" />
   </Application.Styles>
 
   <Application.Resources>
