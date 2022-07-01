@@ -8,8 +8,8 @@
   <Style Selector="controls|TrackTimeline">
     <Setter Property="Template">
       <ControlTemplate>
-        <Border Background="{DynamicResource Zinc/700}">
-          <StackPanel Orientation="Horizontal" Spacing="80" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="80 0 0 0">
+        <Border Background="{DynamicResource Zinc/700}" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left">
+          <StackPanel Orientation="Horizontal" Spacing="80" Margin="80 0 0 0">
             <Rectangle Width="1" Fill="{DynamicResource Gray/600}" />
             <Rectangle Width="1" Fill="{DynamicResource Gray/600}" />
             <Rectangle Width="1" Fill="{DynamicResource Gray/600}" />
