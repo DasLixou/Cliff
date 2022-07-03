@@ -23,20 +23,30 @@ namespace Cliff.Design.ViewModels
     {
         public event EventHandler? CanExecuteChanged;
 
+        private static IWavePlayer outputDevice;
+        private static AudioFileReader audioFile;
+
+        private static void OnPlaybackStopped(object sender, StoppedEventArgs args)
+        {
+            outputDevice?.Dispose();
+            outputDevice = null;
+            audioFile?.Dispose();
+            audioFile = null;
+        }
+
         public bool CanExecute(object? parameter) => true;
 
         public void Execute(object? parameter)
         {
-            using (var audioFile = new AudioFileReader("Assets/Samples/lixoubass.wav"))
-            using (var outputDevice = new WaveOutEvent())
-            {
-                outputDevice.Init(audioFile);
-                outputDevice.Play();
-                while (outputDevice.PlaybackState == PlaybackState.Playing)
-                {
-                    Thread.Sleep(100);
-                }
-            }
+            outputDevice?.Stop();
+
+            outputDevice = new WaveOutEvent();
+            outputDevice.PlaybackStopped += OnPlaybackStopped;
+
+            audioFile = new AudioFileReader("Assets/Samples/lixoubass.wav");
+            outputDevice.Init(audioFile);
+
+            outputDevice.Play();
         }
     }
 }
